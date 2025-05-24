@@ -1,0 +1,83 @@
+.friend-requests-container {
+    display: flex;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.fr-main-content {
+    position: fixed;
+    flex: 1;
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border:0.5px solid white;
+    top:100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #dad7d7;
+    margin: 15px 0;
+}
+
+.toggle-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    border: 0.5px solid white;
+    width: 500px;
+}
+
+
+
+button.active {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0%;
+    width: 250px;
+}
+button.unactive {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0%;
+    width: 250px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+}
+
+th {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+td button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 0.5px solid white;
+    border-radius: 0;
+    background-color: white;
+    color: #000000;
+}   
+td button:hover{
+    color:white;
+    background-color: #000000;
+}
+

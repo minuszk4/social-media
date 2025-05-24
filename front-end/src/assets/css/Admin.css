@@ -1,0 +1,196 @@
+
+
+.admin-container {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+}
+.admin-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 0; /* Đưa nó xuống dưới */
+}
+  
+.admin-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.admin-sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: #34495e;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+    background: #1abc9c;
+}
+
+.admin-content {
+    margin-left: 50px;
+    padding: 20px;
+    margin-top: 80px;
+    z-index: 1;
+    width: 700px;
+}
+
+.content-box {
+    padding: 20px;
+    background: white;
+    /* border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); */
+}
+
+.dashboard-stats p {
+    font-size: 18px;
+    margin: 10px 0;
+    color:rgb(255, 255, 255);
+}
+.user-stats{
+    color: rgb(0, 0, 0);
+}
+.item-list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.list-item span{
+    color: #000000;
+}
+.status.active {
+    color: green;
+    font-weight: bold;
+}
+
+.status.inactive {
+    color: red;
+    font-weight: bold;
+}
+.status {
+    font-weight: bold;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
+.status.online {
+    color: green;
+}
+
+.status.offline {
+    color: red;
+}
+.admin-content .avatar-container .name{
+    color:#000000;
+}
+.fb-story-item .avatar-container .name{
+    color:#ffffff;
+}
+.user-stories-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.user-story-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.user-header .avatar-container .name{
+    color: #ffffff;
+}
+.story-items {
+  padding-left: 20px;
+}
+
+.fb-story-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fb-story-item:hover {
+  background-color: #f0f0f0;
+}
+
+.fb-story-item.active {
+  background-color: #e0f7fa;
+  font-weight: bold;
+}
+
+.white-text-field .MuiInputBase-input {
+  color: white !important;
+}
+
+.white-text-field .MuiInputLabel-root {
+  color: white !important;
+}
+
+.white-text-field .MuiInputLabel-root.Mui-focused {
+  color: white !important;
+}
+
+.white-text-field .MuiOutlinedInput-root fieldset {
+  border-color: white !important;
+}
+
+.white-text-field .MuiOutlinedInput-root:hover fieldset {
+  border-color: white !important;
+}
+
+.white-text-field .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: white !important;
+}

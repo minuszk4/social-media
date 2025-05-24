@@ -1,0 +1,61 @@
+.avatar-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.name {
+    font-size: 16px;
+    color: #ffffff;
+    white-space: nowrap; 
+}
+
+.avt-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 120px;
+    height: 80px;
+}
+
+.avt-popup-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background-color: #f0f2f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.avt-popup-button:hover {
+    background-color: #e0e2e5;
+}
+
+.avt-popup-button svg {
+    width: 16px;
+    height: 16px;
+}

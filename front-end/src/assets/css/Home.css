@@ -1,0 +1,335 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+/* .home{
+    overflow-y:auto ;
+
+} */
+.top-bar {
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 0.5px solid #ccc;
+    position: fixed;
+    z-index: 1000;
+}
+
+.top-bar .left-section,
+.top-bar .center-section,
+.top-bar .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.top-bar .center-section {
+    flex: 1; 
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar .left-section img,
+.top-bar .right-section img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.top-bar .search-icon svg {
+    flex-shrink: 0;     
+    margin-right: 10px; 
+}
+
+.top-bar .search-icon {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.search-icon input {
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    padding: 5px;
+    flex: 1; 
+    width: 500px;
+}
+
+.top-bar .search img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.icon-btn {
+    color:white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    /* display: flex; */
+    align-items: center;
+}
+  
+.icon-btn:hover {
+    opacity: 1;
+}
+  
+.icon-btn span {
+    margin-left: 5px;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.main-content {
+    flex-grow: 1;
+    top: 70px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    position:relative;
+    left: 0%;
+    width: 700px;
+    gap:10px;
+    height: calc(100vh - 70px);
+}
+
+.stories-section {
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #ffffff;
+
+}
+
+.stories {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; 
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+
+    border: 0.5px solid #ffffff;
+
+}
+
+.story {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0.5px solid #ffffff;
+
+}
+
+.story:hover {
+    background-color: #000000;
+}
+
+.post-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px;
+    border: 0.5px solid #ffffff;
+
+}
+
+.post-section textarea {
+    min-height: 50px; 
+    max-height: 200px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fffcfc;
+    color: white;
+    resize: none; 
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+
+}
+.post-section textarea:focus {
+    border-color: #4ff6ff;
+}
+
+.upload-btn {
+    display: block;
+    background-color: #444;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #666;
+}
+
+.post-section button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0.5px solid #ffffff;
+    transition: background-color 0.2s ease-in-out;
+
+}
+.post-button-mg {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.post-section button:hover {
+    background-color: #868788;
+}
+
+
+.preview-image {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.cancel-btn {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0.5px solid #ffffff;
+}
+
+.cancel-btn:hover {
+    background-color: #868788;
+}
+
+.contacts-section {
+    position: fixed; 
+    right: 0; 
+    top: 70px; 
+    width: 250px; 
+    height: 800px; 
+    background-color: #000000; 
+    color: white;
+    border: 0.5px solid #ffffff;
+    border-radius: 10px;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    background: #000000;
+}
+.media-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.media-preview-hm {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.cancel-submit-hm{
+    display: flex;
+    justify-content: space-between; /* To separate the buttons */
+    gap: 10px;
+}
+.media-preview img,
+.media-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.remove-media-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-media-btn:hover {
+    background: rgb(0, 0, 0);
+}
+.privacy-level{
+    color:white;
+    border-radius: 5px;
+}
+.privacy-level select{
+    border: 0.1px solid white;
+    border-radius: 2px;
+}
+.post-section span{
+    color: white;
+}
+.unread-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid white;
+}
+.mess-icon-btn{
+    position: relative;
+    cursor: pointer;
+}

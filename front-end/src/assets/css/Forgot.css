@@ -1,0 +1,66 @@
+body, html {
+    font-size: 18px;
+}
+
+.forgotContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.forgotBox {
+    padding: 30px; 
+    border-radius: 12px; 
+    text-align: center;
+    color: white;
+    width: 400px; 
+}
+
+.lockIcon {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 50px; 
+}
+
+.forgotText {
+    margin-bottom: 25px;
+    font-size: 20px; 
+}
+
+.title {
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
+.email-sender {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.inputField {
+    flex: 1; 
+    height: 48px; 
+}
+
+.submitButton {
+    height: 48px; 
+    width: 48px; 
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+
+.arrowIcon {
+    font-size: 20px;
+}

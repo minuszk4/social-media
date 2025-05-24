@@ -1,0 +1,179 @@
+body, html {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.login {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+
+}
+
+.l-login, .r-login {
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+
+.rectangle-left {
+    width: 80%;
+    border: 0.5px solid #ffffff;
+    margin-bottom: 20px;
+}
+
+.welcome-back {
+    margin: 29px;
+    font-size: 1.5rem;
+}
+
+.welcome-img img {
+    width: 100%;
+}
+.l-login {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.r-login {
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.login2 {
+    background: #000000;
+    border: 0.5px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.log-in {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.email, .password {
+    text-align: left;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.email label, .password label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.email input, .password input {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid #ffffff;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+}
+
+.login3 {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    width: 100%;
+}
+.login3 button {
+    width: 100%;
+    max-width: 200px; 
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.login3 button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-your-pass {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.forgot-your-pass:hover {
+    font-size: 0.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.rectangle-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+    width: 341.46px;
+    border: 0.5px solid #ffffff;
+}
+
+.facebook-instance, .instagram-instance {
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sign-up {
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up-span2 {
+    color: #007BFF;
+    cursor: pointer;
+}
+.error-message {
+  color: #ff0000;
+  background-color: #f8d7da;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #28a745;
+  background-color: #d4edda;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  color: #000;
+}
+
+.google-instance:hover, .facebook-instance:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

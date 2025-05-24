@@ -1,0 +1,323 @@
+.stories-section {
+    margin-bottom: 15px;
+    width: 95%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stories-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+/* Story Container */
+.story-container {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 8px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.slick-slider {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation */
+.custom-prev, 
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.custom-prev:focus,
+.custom-next:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+/* Story Items */
+.story-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.story-item:hover,
+.story-item:focus {
+    transform: scale(1.05);
+}
+
+.story-item:focus {
+    outline: 2px solid #242adf;
+    outline-offset: 2px;
+}
+
+.story-avt-container {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242adf;
+    margin-bottom: 5px;
+}
+
+.story-avt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-name {
+    font-size: 12px;
+    text-align: center;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ffffff;
+}
+/* .create-story-btn{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #242adf;
+    margin-bottom: 5px;
+} */
+/* Create Story */
+.create-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.create-story:hover,
+.create-story:focus {
+    transform: scale(1.05);
+}
+
+.create-story .story-avt-container {
+    background-color: #f0f2f5;
+    border-color: #ddd;
+}
+
+.create-story .story-name {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.story-icon {
+    font-size: 24px;
+    color: #65676b;
+}
+
+/* Empty State */
+.empty-story-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+/* Story Form */
+.story-form {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+}
+
+.story-preview {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-preview img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.delete-btn, 
+.submit-btn {
+    margin-top: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 200px;
+}
+
+.delete-btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.submit-btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.delete-btn:hover,
+.submit-btn:hover {
+    background-color: #1a1a1a;
+}
+
+/* Modal */
+.story-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(90%, 500px);
+    max-height: 90vh;
+    background: transparent;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.7) !important; 
+    backdrop-filter: blur(10px); 
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px 10px 0 0;
+}
+
+.story-header .story-username {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+.story-nav-img{
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+}
+.story-close-btn {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.story-close-btn:hover,
+.story-close-btn:focus {
+    color: #ccc;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    overflow: auto;
+}
+
+.story-main-image {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
+.hidden-file-input {
+    display: none;
+}
+.story-nav-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.story-nav-btn.next-btn{
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+}
+.story-nav-btn.prev-btn{
+    left: -25px;
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+}
+.hidden-btn {
+    visibility: hidden; 
+}

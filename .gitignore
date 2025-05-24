@@ -1,0 +1,5 @@
+./back-end/.env
+./back-end/node_modules
+./front-end/node_modules
+./back-end/firebaseServiceAccount.json
+./back-end/cloundinary.js
